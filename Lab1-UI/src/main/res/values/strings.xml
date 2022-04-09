@@ -1,3 +1,24 @@
 <resources>
-    <string name="app_name">LabsCM20212-Gr09</string>
+    <string name="app_name">Labs20212-Gr09</string>
+    <string name="title">Personal Infomation</string>
+    <string name="name">name</string>
+    <string name="lastName">Lastname</string>
+    <string name="gender">Gender</string>
+    <string name="male">Male</string>
+    <string name="female">Female</string>
+    <string name="birthday">Bithday</string>
+    <string name="next">Next</string>
+    <string name="titleContact">Contact Information</string>
+    <string name="phone">Phone</string>
+    <string name="address">Direction</string>
+    <string name="country">Country</string>
+    <string name="city">City</string>
+    <string name="email">Email</string>
+    <string name="change">Change</string>
+    <string-array name="education_level">
+        <item>Primary</item>
+        <item>High school</item>
+        <item>College</item>
+        <item>other</item>
+    </string-array>
 </resources>

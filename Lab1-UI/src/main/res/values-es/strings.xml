@@ -1,0 +1,25 @@
+<?xml version="1.0" encoding="utf-8"?>
+<resources>
+    <string name="app_name">Labs20212-Gr09</string>
+    <string name="title">Información personal</string>
+    <string name="name">Nombre</string>
+    <string name="lastName">Apellidos</string>
+    <string name="gender">Sexo</string>
+    <string name="male">Hombre</string>
+    <string name="female">Mujer</string>
+    <string name="birthday">Fecha de nacimiento</string>
+    <string name="next">Siguiente</string>
+    <string name="titleContact">Información de contacto</string>
+    <string name="phone">Teléfono</string>
+    <string name="address">Dirección</string>
+    <string name="country">Pais</string>
+    <string name="city">Ciudad</string>
+    <string name="email">Correo</string>
+    <string name="change">Cambiar</string>
+    <string-array name="education_level">
+        <item>Primaria</item>
+        <item>Secundaria</item>
+        <item>Universitaria</item>
+        <item>Otro</item>
+    </string-array>
+</resources>

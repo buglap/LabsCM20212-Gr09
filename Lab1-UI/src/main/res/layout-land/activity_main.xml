@@ -10,7 +10,7 @@
         android:id="@+id/next"
         android:layout_width="wrap_content"
         android:layout_height="wrap_content"
-        android:layout_marginTop="144dp"
+        android:layout_marginTop="76dp"
         android:background="#673AB7"
         android:backgroundTint="#D500F9"
         android:onClick="submitbuttonHandler"
@@ -18,17 +18,17 @@
         app:backgroundTint="#009688"
         app:backgroundTintMode="add"
         app:layout_constraintEnd_toEndOf="parent"
-        app:layout_constraintHorizontal_bias="0.886"
+        app:layout_constraintHorizontal_bias="0.881"
         app:layout_constraintStart_toStartOf="parent"
-        app:layout_constraintTop_toBottomOf="@+id/spinner" />
+        app:layout_constraintTop_toBottomOf="@+id/change" />
 
     <Spinner
         android:id="@+id/spinner"
         android:layout_width="302dp"
         android:layout_height="42dp"
-        android:layout_marginTop="420dp"
+        android:layout_marginTop="268dp"
         app:layout_constraintEnd_toEndOf="parent"
-        app:layout_constraintHorizontal_bias="0.688"
+        app:layout_constraintHorizontal_bias="0.305"
         app:layout_constraintStart_toStartOf="parent"
         app:layout_constraintTop_toTopOf="parent" />
 
@@ -36,69 +36,59 @@
         android:id="@+id/gender"
         android:layout_width="83dp"
         android:layout_height="32dp"
-        android:layout_marginTop="28dp"
+        android:layout_marginTop="24dp"
         android:text="@string/gender"
         android:textSize="18sp"
         app:layout_constraintEnd_toEndOf="parent"
-        app:layout_constraintHorizontal_bias="0.225"
+        app:layout_constraintHorizontal_bias="0.337"
         app:layout_constraintStart_toStartOf="parent"
         app:layout_constraintTop_toBottomOf="@+id/lastName" />
-
-    <EditText
-        android:id="@+id/lastName"
-        android:layout_width="wrap_content"
-        android:layout_height="wrap_content"
-        android:layout_marginTop="8dp"
-        android:ems="10"
-        android:hint="@string/lastName"
-        app:layout_constraintEnd_toEndOf="parent"
-        app:layout_constraintHorizontal_bias="0.368"
-        app:layout_constraintStart_toStartOf="parent"
-        app:layout_constraintTop_toBottomOf="@+id/names" />
 
     <EditText
         android:id="@+id/names"
         android:layout_width="wrap_content"
         android:layout_height="wrap_content"
-        android:layout_marginTop="128dp"
+        android:layout_marginTop="80dp"
         android:ems="10"
         android:hint="@string/name"
         app:layout_constraintEnd_toEndOf="parent"
-        app:layout_constraintHorizontal_bias="0.368"
+        app:layout_constraintHorizontal_bias="0.209"
         app:layout_constraintStart_toStartOf="parent"
         app:layout_constraintTop_toTopOf="parent" />
 
-    <Button
-        android:id="@+id/change"
+    <ImageView
+        android:id="@+id/imageView6"
         android:layout_width="wrap_content"
         android:layout_height="wrap_content"
-        android:layout_marginTop="332dp"
-        android:text="@string/change"
-        app:layout_constraintEnd_toEndOf="parent"
-        app:layout_constraintHorizontal_bias="0.886"
+        android:layout_marginStart="64dp"
+        android:layout_marginTop="92dp"
+        app:layout_constraintEnd_toStartOf="@+id/names"
+        app:layout_constraintHorizontal_bias="0.0"
         app:layout_constraintStart_toStartOf="parent"
-        app:layout_constraintTop_toTopOf="parent" />
+        app:layout_constraintTop_toTopOf="parent"
+        app:srcCompat="@android:drawable/ic_menu_myplaces" />
 
-    <TextView
-        android:id="@+id/bithday"
-        android:layout_width="153dp"
-        android:layout_height="44dp"
-        android:layout_marginTop="332dp"
-        android:text="@string/birthday"
-        app:layout_constraintEnd_toStartOf="@+id/change"
-        app:layout_constraintHorizontal_bias="0.611"
-        app:layout_constraintStart_toStartOf="parent"
+    <EditText
+        android:id="@+id/lastName"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_marginTop="80dp"
+        android:ems="10"
+        android:hint="@string/lastName"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintHorizontal_bias="0.306"
+        app:layout_constraintStart_toEndOf="@+id/names"
         app:layout_constraintTop_toTopOf="parent" />
 
     <RadioGroup
         android:id="@+id/radioGroup"
         android:layout_width="205dp"
         android:layout_height="32dp"
-        android:layout_marginTop="256dp"
+        android:layout_marginTop="152dp"
         android:orientation="horizontal"
         app:layout_constraintEnd_toEndOf="parent"
-        app:layout_constraintHorizontal_bias="0.83"
-        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintHorizontal_bias="0.375"
+        app:layout_constraintStart_toEndOf="@+id/gender"
         app:layout_constraintTop_toTopOf="parent">
 
 
@@ -124,35 +114,46 @@
             app:layout_constraintTop_toTopOf="parent" />
     </RadioGroup>
 
+    <Button
+        android:id="@+id/change"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_marginTop="200dp"
+        android:layout_marginEnd="144dp"
+        android:text="@string/change"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintTop_toTopOf="parent" />
+
+    <TextView
+        android:id="@+id/bithday"
+        android:layout_width="273dp"
+        android:layout_height="48dp"
+        android:layout_marginTop="200dp"
+        android:layout_marginEnd="40dp"
+        android:text="@string/birthday"
+        app:layout_constraintEnd_toStartOf="@+id/change"
+        app:layout_constraintTop_toTopOf="parent" />
+
     <TextView
         android:id="@+id/personalInfo"
         android:layout_width="wrap_content"
         android:layout_height="wrap_content"
-        android:layout_marginTop="64dp"
+        android:layout_marginTop="32dp"
         android:text="@string/title"
         android:textSize="24sp"
         app:layout_constraintEnd_toEndOf="parent"
-        app:layout_constraintHorizontal_bias="0.164"
+        app:layout_constraintHorizontal_bias="0.071"
         app:layout_constraintStart_toStartOf="parent"
         app:layout_constraintTop_toTopOf="parent" />
-
-    <ImageView
-        android:id="@+id/imageView6"
-        android:layout_width="wrap_content"
-        android:layout_height="wrap_content"
-        android:layout_marginStart="24dp"
-        android:layout_marginTop="128dp"
-        app:layout_constraintStart_toStartOf="parent"
-        app:layout_constraintTop_toTopOf="parent"
-        app:srcCompat="@android:drawable/ic_menu_myplaces" />
 
     <ImageView
         android:id="@+id/imageView7"
         android:layout_width="45dp"
         android:layout_height="35dp"
-        android:layout_marginTop="180dp"
+        android:layout_marginTop="76dp"
         android:layout_marginEnd="8dp"
         app:layout_constraintEnd_toStartOf="@+id/bithday"
+        app:layout_constraintHorizontal_bias="0.656"
         app:layout_constraintStart_toStartOf="parent"
         app:layout_constraintTop_toBottomOf="@+id/imageView6"
         app:srcCompat="@android:drawable/ic_menu_my_calendar" />
@@ -161,9 +162,10 @@
         android:id="@+id/imageView8"
         android:layout_width="wrap_content"
         android:layout_height="wrap_content"
-        android:layout_marginTop="52dp"
+        android:layout_marginTop="40dp"
         android:layout_marginEnd="8dp"
         app:layout_constraintEnd_toStartOf="@+id/spinner"
+        app:layout_constraintHorizontal_bias="0.846"
         app:layout_constraintStart_toStartOf="parent"
         app:layout_constraintTop_toBottomOf="@+id/imageView7"
         app:srcCompat="@android:drawable/ic_menu_edit" />
